@@ -5,12 +5,10 @@ export default class CounterMain extends Component {
   constructor() {
     super();
     this.state = {
-      specifiedDate: "January 1, 2021",
+      specifiedDate: "November 3, 2020",
       newDate: "",
-      darkMode: true,
     };
     this.handleInput = this.handleInput.bind(this);
-    this.handleDarkMode = this.handleDarkMode.bind(this);
   }
 
   changeDate() {
@@ -31,34 +29,12 @@ export default class CounterMain extends Component {
     });
   }
 
-  handleDarkMode() {
-    this.setState((prevState) => {
-      return {
-        // returning the opposite of darkMode initial state of true
-        darkMode: !prevState.darkMode,
-      };
-    });
-  }
-
   render() {
-    let display = this.state.darkMode ? "" : null;
-    let buttonText = this.state.darkMode
-      ? "Turn Dark Mode Off"
-      : "Turn Light Mode Off";
-
-    const darkStyles = {
-      backgroundColor: "black",
-      color: "white",
-    };
-    const lightStyles = {
-      backgroundColor: "white",
-      color: "black",
-    };
+  
     // console.log(this.newDate)
     return (
-      <div className="main" style={display === "" ? darkStyles : lightStyles}>
-        {/* <button onClick={this.handleDarkMode}>{buttonText}</button> */}
-        <h1 className="">Trump Out of Office</h1>
+      <div className="main" >
+        <span className="title-text">Presidential Election Day</span>
         <section>
           <h6>{this.state.specifiedDate}</h6>
         </section>

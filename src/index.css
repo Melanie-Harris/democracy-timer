@@ -16,7 +16,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  /* background-color: black; */
 }
 
 code {
@@ -34,17 +34,22 @@ code {
 
 .keys-display div {
   display: inline;
-  margin: 1rem;
+  margin: .6rem;
 }
 .title {
   font-family: "Tangerine", cursive;
   color: #7a7b80;
   /* color:#656668 */
   padding: 1.9rem;
+  font-size: 2.5rem;
+}
+.title-text{
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
 .header {
-  background-color: black;
+  /* background-color: black; */
   text-align: center !important;
 }
 
@@ -55,7 +60,7 @@ code {
   text-align: center;
   font-size: 1.3rem;
   text-decoration: none;
-  color: rgb(196, 194, 194);
+  color: #7a7b80;
   padding: 1.5rem;
 }
 .footer a {
@@ -67,10 +72,17 @@ code {
 }
 
 .credit {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 .icon-style li {
   display: inline;
   padding: 1rem;
   font-size: 1.3rem;
+}
+.quote{
+  color: #7a7b80;
+  font-style: oblique;
+  /* font-family: "Tangerine", cursive; */
+  font-size: 1.5rem;
+  padding-top: 4rem;
 }

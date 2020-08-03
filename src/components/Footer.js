@@ -9,7 +9,7 @@ export default function Footer() {
           <li><a href="https://www.linkedin.com/in/melanieharris-mba/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
           <li><a href="https://twitter.com/Melanie_Harris_" target="_blank"><i class="fab fa-twitter"></i></a></li>
         </ul> */}
-        <span className="credit">Image Credit: ​FriendlyStock.com</span>
+        <span className="credit">Image: ​FriendlyStock.com</span>
     </div>
   );
 }

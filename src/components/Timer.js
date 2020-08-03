@@ -9,14 +9,13 @@ export default class Timer extends Component {
         minutes:0,
         seconds:0
     };
-    // console.log(this.props)
   }
 componentWillMount(){
     this.getRemainingTime(this.props.specifiedDate)
 }
   componentDidMount(){
       setInterval(()=> this.getRemainingTime(this.props.specifiedDate),1000)
-    //   milliseconds
+    //  in milliseconds
   }
 
   getRemainingTime(specifiedDate){
@@ -39,15 +38,18 @@ componentWillMount(){
   leadingZero(num){ return num < 10 ? "0" + num : num}
 
   render() {
+    const keyStyles = {
+      fontSize:"1.6rem"
+    };
       
     //   this.getRemainingTime(this.props.specifiedDate)
     return (
        
       <div> 
-        <section className="keys-display">
-          <div>{this.leadingZero(this.state.days)} Days</div>
-          <div>{this.leadingZero(this.state.hours)} Hours</div>
-          <div>{this.leadingZero(this.state.minutes)} Minutes</div>
+        <section style={keyStyles} className="keys-display">
+          <div>{this.leadingZero(this.state.days)} Days</div><br/>
+          <div>{this.leadingZero(this.state.hours)} Hours</div><br/>
+          <div>{this.leadingZero(this.state.minutes)} Minutes</div><br/>
           <div>{this.leadingZero(this.state.seconds)} Seconds</div>
         </section>
       </div>
