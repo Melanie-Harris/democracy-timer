@@ -5,13 +5,13 @@ import { Col, Row } from "react-bootstrap";
 export default function Quotes() {
   return (
     <div className="quote">
-      <h1>Vote, Vote, Vote</h1>
+      <span className="vote">Vote, Vote, Vote</span>
         <blockquote>
       {/* <span>
         “Someone struggled for your right to vote. Use it.” – Susan B. Anthony
       </span><br/> */}
       <span>
-        “Resistance isn’t enough. If we want change, we have to get out the
+        “Resistance isn’t enough. If we want change, we have to get out and
         vote.”― DaShanne Stokes
       </span><br/>
       <span>

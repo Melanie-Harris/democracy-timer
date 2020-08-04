@@ -49,20 +49,20 @@ export default class App extends React.Component {
        {this.state.currentImg}
         <Header />
         <Row>
-          <Col lg={4}>
+          <Col sm={4}>
             <CounterMain />
           </Col>
-          <Col lg={4}>
+          <Col sm={4}>
             <img
               src={trump}
-              className="App-logo"
+              className="logo"
               alt="logo"
               style={{textAlign:"center"}}
             />
              {/* <button style={buttonStyle} onClick={this.handleDarkMode}>{buttonText}</button>  */}
           </Col>
         
-          <Col lg={4} className="">
+          <Col sm={4} className="">
             <CounterMain2/>
           </Col>
         </Row>
