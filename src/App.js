@@ -11,7 +11,9 @@ import CounterMain2 from "./components/CounterMain2";
 export default class App extends React.Component {
   constructor(){
     super()
-    this.state={ darkMode: true, }
+    this.state={ 
+      darkMode: true, 
+    }
     this.handleDarkMode = this.handleDarkMode.bind(this);
   }
 
@@ -44,7 +46,7 @@ export default class App extends React.Component {
 
     return (
       <div style={display === "" ? darkStyles : lightStyles} className="app-container">
-       
+       {this.state.currentImg}
         <Header />
         <Row>
           <Col lg={4}>
@@ -57,7 +59,7 @@ export default class App extends React.Component {
               alt="logo"
               style={{textAlign:"center"}}
             />
-             <button style={buttonStyle} onClick={this.handleDarkMode}>{buttonText}</button> 
+             {/* <button style={buttonStyle} onClick={this.handleDarkMode}>{buttonText}</button>  */}
           </Col>
         
           <Col lg={4} className="">

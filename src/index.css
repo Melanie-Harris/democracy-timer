@@ -42,7 +42,7 @@ code {
   color: #7a7b80;
   /* color:#656668 */
   padding: 1.9rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 .title-text{
   font-size: 2.5rem;
@@ -85,5 +85,5 @@ code {
   font-style: oblique;
   /* font-family: "Tangerine", cursive; */
   font-size: 1.5rem;
-  padding-top: 4rem;
+  padding-top: 8rem;
 }

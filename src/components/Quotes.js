@@ -5,10 +5,11 @@ import { Col, Row } from "react-bootstrap";
 export default function Quotes() {
   return (
     <div className="quote">
+      <h1>Vote, Vote, Vote</h1>
         <blockquote>
-      <span>
+      {/* <span>
         “Someone struggled for your right to vote. Use it.” – Susan B. Anthony
-      </span><br/>
+      </span><br/> */}
       <span>
         “Resistance isn’t enough. If we want change, we have to get out the
         vote.”― DaShanne Stokes
@@ -17,10 +18,10 @@ export default function Quotes() {
         “There’s no such thing as a vote that doesn’t matter.”― Barack Obama
       </span><br/>
       <span>“Voting is not only our right—it is our power.” – Loung Ung</span><br/>
-      <span>
+      {/* <span>
         “Every election is determined by the people who show up.” – Larry J.
         Sabato
-      </span><br/>
+      </span><br/> */}
       </blockquote>
       
     </div>
