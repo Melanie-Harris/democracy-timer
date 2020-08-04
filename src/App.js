@@ -7,6 +7,8 @@ import trump2 from "./img/13-trump.svg"
 import Footer from "./components/Footer";
 import Quotes from "./components/Quotes";
 import CounterMain2 from "./components/CounterMain2";
+import ReactGa from "react-ga";
+import Analytics from "./components/Analytics";
 
 export default class App extends React.Component {
   constructor(){
@@ -46,6 +48,7 @@ export default class App extends React.Component {
 
     return (
       <div style={display === "" ? darkStyles : lightStyles} className="app-container container-fluid">
+       <Analytics/>
        {this.state.currentImg}
         <Header />
         <Row>
