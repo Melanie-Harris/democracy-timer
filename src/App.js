@@ -45,7 +45,7 @@ export default class App extends React.Component {
     }
 
     return (
-      <div style={display === "" ? darkStyles : lightStyles} className="app-container">
+      <div style={display === "" ? darkStyles : lightStyles} className="app-container container-fluid">
        {this.state.currentImg}
         <Header />
         <Row>
