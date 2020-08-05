@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Timer from "./Timer";
+import TimerMoment from "./TimerMoment";
 
 export default class CounterMain extends Component {
   constructor() {
@@ -30,7 +31,7 @@ export default class CounterMain extends Component {
   }
 
   render() {
-  
+  console.log(new Date())
     // console.log(this.newDate)
     return (
       <div className="main" >
@@ -38,7 +39,8 @@ export default class CounterMain extends Component {
         <section>
           <h6>{this.state.specifiedDate}</h6>
         </section>
-        <Timer specifiedDate={this.state.specifiedDate} />
+        <TimerMoment newDate={this.state.specifiedDate}/>
+        {/* <Timer specifiedDate={this.state.specifiedDate} /> */}
         <section>
           {/* <input placeholder="new date" name="newDate" onChange={this.handleInput}/>
           <button type="button" onClick={()=> this.changeDate()}> submit</button> */}

@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+// **** NOTE: LOGIC DOES NOT TAKE ACCOUNT FOR TIME ZONE DIFFERENTIALS, WILL SWITCH TO USING MOMENT.JS
+
 
 export default class Timer extends Component {
   constructor(props) {

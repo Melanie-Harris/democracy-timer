@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import ReactGa from "react-ga";
-import{
-    BrowserRouter as Router,
-    Switch,
-    Route
-} from "react-router-dom"
+// import{
+//     BrowserRouter as Router,
+//     Switch,
+//     Route
+// } from "react-router-dom"
 
 
 
