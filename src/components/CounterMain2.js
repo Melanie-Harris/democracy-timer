@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Timer from "./Timer";
+// import Timer from "./Timer";
 import TimerMoment from "./TimerMoment";
 
 export default class CounterMain2 extends Component {

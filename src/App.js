@@ -54,7 +54,6 @@ export default class App extends React.Component {
     return (
       <div style={display === "" ? darkStyles : lightStyles} className="app-container container-fluid">
        <Analytics/>
-       <TimerMoment/>
        {this.state.currentImg}
         <Header />
         <Row>
@@ -63,7 +62,7 @@ export default class App extends React.Component {
           </Col>
           <Col sm={4}>
             <img
-              src={trump}
+              src={trump}    
               className="logo"
               alt="logo"
               style={cursor}
